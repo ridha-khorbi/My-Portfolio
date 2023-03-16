@@ -2,6 +2,7 @@
   "name": "portofolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ridhakhorbi.com",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@iconscout/react-unicons": "^1.1.6",
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
